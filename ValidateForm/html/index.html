@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/solid.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="modal-dialog">
+    <div class="col-sm-8 main-section">
+        <div class="modal-content">
+            <div class="col-12 user-img">
+                <img src="../images/avatar.png" alt="avatar">
+            </div>
+            <form class="col-12" id="formulario">
+                <div class="form-group" id="nombApells">
+                    <input type="text"  id="nomApe" class="form-control" placeholder="Nombre">
+                    <span class="errorTexto" id="errnombre" name="error"></span>
+                </div>
+                <div class="form-group" id="AnioNac">
+                    <input type="number"  id="anioNac" class="form-control" placeholder="Año de nacimiento">
+                    <span class="errorTexto" id="erranionac" name="error"></span>
+                </div>
+                <div class="form-group" id="user">
+                    <input type="text"  id="usuario" class="form-control" placeholder="Introducir usuario">
+                    <span class="errorTexto" id="errusuario" name="error"></span>
+                </div>
+                <div class="form-group" id="passw">
+                    <input type="text"  id="contrasena" class="form-control" placeholder="Introducir contraseña">
+                    <span class="errorTexto" id="errcontrasena" name="error"></span>
+                </div>
+                <div class="form-group" id="passw">
+                    <input type="text"  id="RepContrasena" class="form-control" placeholder="Repetir contraseña">
+                    <span class="errorTexto" id="errRepContrasena" name="error"></span>
+                </div>
+
+                <div class="col-12 forgot check">
+				    <input id="check" type="checkbox" class="check">
+				    <label for="check"><span class="icon"></span> Recordar Contraseña</label>
+                </div>
+                
+                <button type="submit" id="enviar" class="bnt btn-primary"><i class="fas fa-sign-in-alt"></i>Ingresar</button>
+                <button class="bnt btn-primary" type="button" id="crear">Crear</button>
+                <button class="bnt btn-primary" type="button" id="listar">Listar</button>
+                <button class="bnt btn-primary" type="reset" id="resetear">Resetear</button>
+                <button class="bnt btn-primary" type="button" id="limpiar">Limpiar cookies</button>
+            </form>
+            
+        </div>
+    </div>
+</div>
+<!--Referencia a la librería crypto-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+<script src="../js/script.js"></script>
+</body>
+</html>
